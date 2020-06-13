@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pn-p-graph-users-sample-client-side-solution",
+    "id": "5a34f1a9-e383-4898-92e1-e0e2e38d168a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/pn-p-graph-users-sample.sppkg"
+  }
+}
