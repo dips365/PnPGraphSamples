@@ -15,8 +15,6 @@ export interface IPnPGraphUsersWebPartProps {
   description: string;
 }
 
-
-
 export default class PnPGraphUsersWebPart extends BaseClientSideWebPart <IPnPGraphUsersWebPartProps> {
 private PnPGraphServiceInstance:PnPGraphService;
 
@@ -29,8 +27,6 @@ private PnPGraphServiceInstance:PnPGraphService;
       this.PnPGraphServiceInstance = new PnPGraphService();
     });
   }
-
-
 
   public render(): void {
     const element: React.ReactElement<IPnPGraphUsersProps> = React.createElement(

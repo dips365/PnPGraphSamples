@@ -25,7 +25,6 @@ constructor(props){
     })
  }
 
-
   public render(): React.ReactElement<IPnPGraphUsersProps> {
     return (
       <div className={ styles.pnPGraphUsers }>

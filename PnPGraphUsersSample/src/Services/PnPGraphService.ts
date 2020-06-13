@@ -13,9 +13,32 @@ export class PnPGraphService implements IPnPGraphService{
     } catch (error) {
       Log.error("",error);
     }
-
     return myInfo;
+  } 
+
+  public async getPeopleAroundMe():Promise<any[]>{
+    let peopleinfo:any[] = [];
+    try {
+      await graph.me.people().then((info)=>{
+        peopleinfo = info
+      }).catch((error)=>{
+        Log.error("",error);
+      })
+    } catch (error) {
+      Log.error("",error);
+    }
+    return peopleinfo;
   }
 
-
+  public async getMatchingUser(email:string):Promise<any[]>{
+    let info:any[] = [];
+    try {
+      await graph.users.getById(email).get().then((info)=>{
+        info = info;
+      });
+    } catch (error) {
+      Log.error("",error);
+    }
+    return info;
+  }
 }
